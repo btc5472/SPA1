@@ -1,0 +1,26 @@
+<h1 id="tableLabel">Exoplanets</h1>
+
+<p>These are some of the known exoplanets</p>
+
+<p *ngIf="!exoplanets"><em>Loading...</em></p>
+
+<table class='table table-striped' aria-labelledby="tableLabel" *ngIf="exoplanets">
+  <thead>
+    <tr>
+      <th>Exoplanet ID</th>
+      <th>Name</th>
+      <th># of Moons</th>
+      <th>Life</th>
+      <th>Parent Solar System</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let exoplanet of exoplanets">
+      <td>{{ exoplanet.exoplanetId }}</td>
+      <td>{{ exoplanet.name }}</td>
+      <td>{{ exoplanet.numMoons }}</td>
+      <td>{{ exoplanet.life }}</td>
+      <td>{{ exoplanet.solarSystemId }}</td>
+    </tr>
+  </tbody>
+</table>

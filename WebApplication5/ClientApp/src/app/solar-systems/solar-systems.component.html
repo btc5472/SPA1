@@ -1,0 +1,24 @@
+<h1 id="tableLabel">Solar Systems</h1>
+
+<p>Known Solar Systems in our Milky Way Galaxy</p>
+
+<p *ngIf="!solarSystems"><em>Loading...</em></p>
+
+<table class='table table-striped' aria-labelledby="tableLabel" *ngIf="solarSystems">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Binary System</th>
+      <th># of Planets</th>
+      <th>Life</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let solarSystem of solarSystems">
+      <td>{{ solarSystem.solarSystemId }}</td>
+      <td>{{ solarSystem.name }}</td>
+      <td>{{ solarSystem.binaryStars }}</td>
+      <td>{{ solarSystem.numOfPlanets }}</td>
+    </tr>
+  </tbody>
+</table>
