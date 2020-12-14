@@ -20,5 +20,6 @@ interface SolarSystemIF {
   solarSystemId: number;
   name: string
   binaryStars: boolean;
-  numOfPlanets: number;
+  numPlanets: number;
+  //life: boolean;
 }
