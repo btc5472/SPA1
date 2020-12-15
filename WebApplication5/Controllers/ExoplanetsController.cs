@@ -1,9 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
+using System.Collections.Generic;
+using System.Threading.Tasks;
 using WebApplication5.Models;
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -41,7 +39,6 @@ namespace WebApplication5.Controllers
             }
 
             ExoplanetDto exoplanetDto = new ExoplanetDto
-            // Expect you to return to the client someting more meaningful than the scaffolded code. Expect DTO to have the member variables from both tables/classes 1:22:20 in Entity Framework Part 2 video
             {
                 ExoplanetId = exoplanet.ExoplanetId,
                 Name = exoplanet.Name,

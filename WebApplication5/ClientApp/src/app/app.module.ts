@@ -16,6 +16,7 @@ import { ExoplanetsComponent } from './exoplanets/exoplanets.component';
 import { LoginComponent } from './login/login.component';
 import { ParentSsDetailsComponent } from './parent-ss-details/parent-ss-details.component';
 import { PlanetsOfSsComponent } from './planets-of-ss/planets-of-ss.component';
+import { SolarSystemWithExoplanetsComponent } from './solar-system-with-exoplanets/solar-system-with-exoplanets.component';
 
 /*const CALLBACK_PATH = 'login/callback';
 
@@ -52,7 +53,8 @@ const config = {
     ExoplanetsComponent,
     LoginComponent,
     ParentSsDetailsComponent,
-    PlanetsOfSsComponent
+    PlanetsOfSsComponent,
+    SolarSystemWithExoplanetsComponent
     //OktaCallbackComponent // Commenting this line out makes it so my homepage loads without "Loading..."
   ],
   imports: [
@@ -67,7 +69,8 @@ const config = {
       { path: 'counter', component: CounterComponent },
       { path: 'fetch-data', component: FetchDataComponent },
       { path: 'solar-systems', component: SolarSystemsComponent },
-      { path: 'exoplanets', component: ExoplanetsComponent }
+      { path: 'exoplanets', component: ExoplanetsComponent },
+      { path: 'solar-systems/:id', component: SolarSystemWithExoplanetsComponent}
       //{ path: '**', redirectTo: '' }
     ])
   ],

@@ -345,6 +345,157 @@
     },
 
     /***/
+    "EGwD":
+    /*!****************************************************************************************!*\
+      !*** ./src/app/solar-system-with-exoplanets/solar-system-with-exoplanets.component.ts ***!
+      \****************************************************************************************/
+
+    /*! exports provided: SolarSystemWithExoplanetsComponent */
+
+    /***/
+    function EGwD(module, __webpack_exports__, __webpack_require__) {
+      "use strict";
+
+      __webpack_require__.r(__webpack_exports__);
+      /* harmony export (binding) */
+
+
+      __webpack_require__.d(__webpack_exports__, "SolarSystemWithExoplanetsComponent", function () {
+        return SolarSystemWithExoplanetsComponent;
+      });
+      /* harmony import */
+
+
+      var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+      /*! @angular/core */
+      "fXoL");
+      /* harmony import */
+
+
+      var _angular_common_http__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+      /*! @angular/common/http */
+      "tk/3");
+      /* harmony import */
+
+
+      var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
+      /*! @angular/router */
+      "tyNb");
+      /* harmony import */
+
+
+      var _angular_common__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
+      /*! @angular/common */
+      "ofXK");
+
+      function SolarSystemWithExoplanetsComponent_p_4_Template(rf, ctx) {
+        if (rf & 1) {
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "p");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "em");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](2, "Loading...");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        }
+      }
+
+      var SolarSystemWithExoplanetsComponent = /*#__PURE__*/function () {
+        function SolarSystemWithExoplanetsComponent(http, baseUrl, route) {
+          var _this2 = this;
+
+          _classCallCheck(this, SolarSystemWithExoplanetsComponent);
+
+          this.route = route;
+          http.get(baseUrl + 'api/solarSystemsWithExoplanets/' + this.ssId).subscribe(function (result) {
+            _this2.solarSystemVMs = result;
+          }, function (error) {
+            return console.error(error);
+          });
+        }
+
+        _createClass(SolarSystemWithExoplanetsComponent, [{
+          key: "ngOnInit",
+          value: function ngOnInit() {
+            var id = parseInt(this.route.snapshot.paramMap.get('id'));
+            this.ssId = id;
+          }
+        }]);
+
+        return SolarSystemWithExoplanetsComponent;
+      }();
+
+      SolarSystemWithExoplanetsComponent.ɵfac = function SolarSystemWithExoplanetsComponent_Factory(t) {
+        return new (t || SolarSystemWithExoplanetsComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpClient"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"]('BASE_URL'), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_router__WEBPACK_IMPORTED_MODULE_2__["ActivatedRoute"]));
+      };
+
+      SolarSystemWithExoplanetsComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({
+        type: SolarSystemWithExoplanetsComponent,
+        selectors: [["app-solar-system-with-exoplanets"]],
+        decls: 5,
+        vars: 2,
+        consts: [["id", "tableLabel"], [4, "ngIf"]],
+        template: function SolarSystemWithExoplanetsComponent_Template(rf, ctx) {
+          if (rf & 1) {
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "h1", 0);
+
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](1, "Solar System with its Exoplanets");
+
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "p");
+
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](3);
+
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](4, SolarSystemWithExoplanetsComponent_p_4_Template, 3, 0, "p", 1);
+          }
+
+          if (rf & 2) {
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](3);
+
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"]("This is the solar system id num that was passed: ", ctx.ssId, "");
+
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", !ctx.solarSystemVMs);
+          }
+        },
+        directives: [_angular_common__WEBPACK_IMPORTED_MODULE_3__["NgIf"]],
+        styles: ["\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzb2xhci1zeXN0ZW0td2l0aC1leG9wbGFuZXRzLmNvbXBvbmVudC5jc3MifQ== */"]
+      });
+      /*@__PURE__*/
+
+      (function () {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](SolarSystemWithExoplanetsComponent, [{
+          type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
+          args: [{
+            selector: 'app-solar-system-with-exoplanets',
+            templateUrl: './solar-system-with-exoplanets.component.html',
+            styleUrls: ['./solar-system-with-exoplanets.component.css']
+          }]
+        }], function () {
+          return [{
+            type: _angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpClient"]
+          }, {
+            type: undefined,
+            decorators: [{
+              type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Inject"],
+              args: ['BASE_URL']
+            }]
+          }, {
+            type: _angular_router__WEBPACK_IMPORTED_MODULE_2__["ActivatedRoute"]
+          }];
+        }, null);
+      })();
+      /***/
+
+    },
+
+    /***/
     "Gaim":
     /*!******************************************************************!*\
       !*** ./src/app/parent-ss-details/parent-ss-details.component.ts ***!
@@ -572,12 +723,12 @@
       }
 
       var FetchDataComponent = function FetchDataComponent(http, baseUrl) {
-        var _this2 = this;
+        var _this3 = this;
 
         _classCallCheck(this, FetchDataComponent);
 
         http.get(baseUrl + 'weatherforecast').subscribe(function (result) {
-          _this2.forecasts = result;
+          _this3.forecasts = result;
         }, function (error) {
           return console.error(error);
         });
@@ -1058,12 +1209,6 @@
       var _nav_menu_nav_menu_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
       /*! ./nav-menu/nav-menu.component */
       "Sqpg");
-      /* harmony import */
-
-
-      var _angular_common__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(
-      /*! @angular/common */
-      "ofXK");
 
       var __awaiter = undefined && undefined.__awaiter || function (thisArg, _arguments, P, generator) {
         function adopt(value) {
@@ -1097,49 +1242,9 @@
         });
       };
 
-      function AppComponent_a_3_Template(rf, ctx) {
-        if (rf & 1) {
-          var _r3 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵgetCurrentView"]();
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "a", 4);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function AppComponent_a_3_Template_a_click_0_listener() {
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r3);
-
-            var ctx_r2 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"]();
-
-            return ctx_r2.login();
-          });
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](1, "Login");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        }
-      }
-
-      function AppComponent_a_4_Template(rf, ctx) {
-        if (rf & 1) {
-          var _r5 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵgetCurrentView"]();
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "a", 5);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function AppComponent_a_4_Template_a_click_0_listener() {
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r5);
-
-            var ctx_r4 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"]();
-
-            return ctx_r4.logout();
-          });
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](1, "Logout");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        }
-      }
-
       var AppComponent = /*#__PURE__*/function () {
         function AppComponent(oktaAuth, router) {
-          var _this3 = this;
+          var _this4 = this;
 
           _classCallCheck(this, AppComponent);
 
@@ -1148,7 +1253,7 @@
           this.title = 'app'; // Subscribe to authentication state changes
 
           this.oktaAuth.$authenticationState.subscribe(function (isAuthenticated) {
-            return _this3.isAuthenticated = isAuthenticated;
+            return _this4.isAuthenticated = isAuthenticated;
           });
         }
 
@@ -1196,9 +1301,9 @@
       AppComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({
         type: AppComponent,
         selectors: [["app-root"]],
-        decls: 7,
-        vars: 2,
-        consts: [[1, "ui", "container"], ["class", "item", 3, "click", 4, "ngIf"], ["id", "logout-button", "class", "item", 3, "click", 4, "ngIf"], [1, "container"], [1, "item", 3, "click"], ["id", "logout-button", 1, "item", 3, "click"]],
+        decls: 4,
+        vars: 0,
+        consts: [[1, "container"]],
         template: function AppComponent_Template(rf, ctx) {
           if (rf & 1) {
             _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "body");
@@ -1207,32 +1312,14 @@
 
             _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "div", 0);
 
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](3, AppComponent_a_3_Template, 2, 0, "a", 1);
-
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](4, AppComponent_a_4_Template, 2, 0, "a", 2);
-
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](5, "div", 3);
-
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](6, "router-outlet");
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](3, "router-outlet");
 
             _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
             _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-          }
-
-          if (rf & 2) {
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](3);
-
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", !ctx.isAuthenticated);
-
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
-
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", ctx.isAuthenticated);
           }
         },
-        directives: [_nav_menu_nav_menu_component__WEBPACK_IMPORTED_MODULE_3__["NavMenuComponent"], _angular_common__WEBPACK_IMPORTED_MODULE_4__["NgIf"], _angular_router__WEBPACK_IMPORTED_MODULE_1__["RouterOutlet"]],
+        directives: [_nav_menu_nav_menu_component__WEBPACK_IMPORTED_MODULE_3__["NavMenuComponent"], _angular_router__WEBPACK_IMPORTED_MODULE_1__["RouterOutlet"]],
         encapsulation: 2
       });
       /*@__PURE__*/
@@ -1371,6 +1458,12 @@
       var _planets_of_ss_planets_of_ss_component__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(
       /*! ./planets-of-ss/planets-of-ss.component */
       "gdcK");
+      /* harmony import */
+
+
+      var _solar_system_with_exoplanets_solar_system_with_exoplanets_component__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(
+      /*! ./solar-system-with-exoplanets/solar-system-with-exoplanets.component */
+      "EGwD");
       /*const CALLBACK_PATH = 'login/callback';
       
       const appRoutes: Routes = [
@@ -1438,13 +1531,16 @@
         }, {
           path: 'exoplanets',
           component: _exoplanets_exoplanets_component__WEBPACK_IMPORTED_MODULE_12__["ExoplanetsComponent"]
+        }, {
+          path: 'solar-systems/:id',
+          component: _solar_system_with_exoplanets_solar_system_with_exoplanets_component__WEBPACK_IMPORTED_MODULE_16__["SolarSystemWithExoplanetsComponent"]
         } //{ path: '**', redirectTo: '' }
         ])]]
       });
 
       (function () {
         (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵsetNgModuleScope"](AppModule, {
-          declarations: [_app_component__WEBPACK_IMPORTED_MODULE_6__["AppComponent"], _nav_menu_nav_menu_component__WEBPACK_IMPORTED_MODULE_7__["NavMenuComponent"], _home_home_component__WEBPACK_IMPORTED_MODULE_8__["HomeComponent"], _counter_counter_component__WEBPACK_IMPORTED_MODULE_9__["CounterComponent"], _fetch_data_fetch_data_component__WEBPACK_IMPORTED_MODULE_10__["FetchDataComponent"], _solar_systems_solar_systems_component__WEBPACK_IMPORTED_MODULE_11__["SolarSystemsComponent"], _exoplanets_exoplanets_component__WEBPACK_IMPORTED_MODULE_12__["ExoplanetsComponent"], _login_login_component__WEBPACK_IMPORTED_MODULE_13__["LoginComponent"], _parent_ss_details_parent_ss_details_component__WEBPACK_IMPORTED_MODULE_14__["ParentSsDetailsComponent"], _planets_of_ss_planets_of_ss_component__WEBPACK_IMPORTED_MODULE_15__["PlanetsOfSsComponent"] //OktaCallbackComponent // Commenting this line out makes it so my homepage loads without "Loading..."
+          declarations: [_app_component__WEBPACK_IMPORTED_MODULE_6__["AppComponent"], _nav_menu_nav_menu_component__WEBPACK_IMPORTED_MODULE_7__["NavMenuComponent"], _home_home_component__WEBPACK_IMPORTED_MODULE_8__["HomeComponent"], _counter_counter_component__WEBPACK_IMPORTED_MODULE_9__["CounterComponent"], _fetch_data_fetch_data_component__WEBPACK_IMPORTED_MODULE_10__["FetchDataComponent"], _solar_systems_solar_systems_component__WEBPACK_IMPORTED_MODULE_11__["SolarSystemsComponent"], _exoplanets_exoplanets_component__WEBPACK_IMPORTED_MODULE_12__["ExoplanetsComponent"], _login_login_component__WEBPACK_IMPORTED_MODULE_13__["LoginComponent"], _parent_ss_details_parent_ss_details_component__WEBPACK_IMPORTED_MODULE_14__["ParentSsDetailsComponent"], _planets_of_ss_planets_of_ss_component__WEBPACK_IMPORTED_MODULE_15__["PlanetsOfSsComponent"], _solar_system_with_exoplanets_solar_system_with_exoplanets_component__WEBPACK_IMPORTED_MODULE_16__["SolarSystemWithExoplanetsComponent"] //OktaCallbackComponent // Commenting this line out makes it so my homepage loads without "Loading..."
           ],
           imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"], _angular_common_http__WEBPACK_IMPORTED_MODULE_3__["HttpClientModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormsModule"], _okta_okta_angular__WEBPACK_IMPORTED_MODULE_5__["OktaAuthModule"], _angular_router__WEBPACK_IMPORTED_MODULE_4__["RouterModule"]]
         });
@@ -1456,7 +1552,7 @@
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵsetClassMetadata"](AppModule, [{
           type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"],
           args: [{
-            declarations: [_app_component__WEBPACK_IMPORTED_MODULE_6__["AppComponent"], _nav_menu_nav_menu_component__WEBPACK_IMPORTED_MODULE_7__["NavMenuComponent"], _home_home_component__WEBPACK_IMPORTED_MODULE_8__["HomeComponent"], _counter_counter_component__WEBPACK_IMPORTED_MODULE_9__["CounterComponent"], _fetch_data_fetch_data_component__WEBPACK_IMPORTED_MODULE_10__["FetchDataComponent"], _solar_systems_solar_systems_component__WEBPACK_IMPORTED_MODULE_11__["SolarSystemsComponent"], _exoplanets_exoplanets_component__WEBPACK_IMPORTED_MODULE_12__["ExoplanetsComponent"], _login_login_component__WEBPACK_IMPORTED_MODULE_13__["LoginComponent"], _parent_ss_details_parent_ss_details_component__WEBPACK_IMPORTED_MODULE_14__["ParentSsDetailsComponent"], _planets_of_ss_planets_of_ss_component__WEBPACK_IMPORTED_MODULE_15__["PlanetsOfSsComponent"] //OktaCallbackComponent // Commenting this line out makes it so my homepage loads without "Loading..."
+            declarations: [_app_component__WEBPACK_IMPORTED_MODULE_6__["AppComponent"], _nav_menu_nav_menu_component__WEBPACK_IMPORTED_MODULE_7__["NavMenuComponent"], _home_home_component__WEBPACK_IMPORTED_MODULE_8__["HomeComponent"], _counter_counter_component__WEBPACK_IMPORTED_MODULE_9__["CounterComponent"], _fetch_data_fetch_data_component__WEBPACK_IMPORTED_MODULE_10__["FetchDataComponent"], _solar_systems_solar_systems_component__WEBPACK_IMPORTED_MODULE_11__["SolarSystemsComponent"], _exoplanets_exoplanets_component__WEBPACK_IMPORTED_MODULE_12__["ExoplanetsComponent"], _login_login_component__WEBPACK_IMPORTED_MODULE_13__["LoginComponent"], _parent_ss_details_parent_ss_details_component__WEBPACK_IMPORTED_MODULE_14__["ParentSsDetailsComponent"], _planets_of_ss_planets_of_ss_component__WEBPACK_IMPORTED_MODULE_15__["PlanetsOfSsComponent"], _solar_system_with_exoplanets_solar_system_with_exoplanets_component__WEBPACK_IMPORTED_MODULE_16__["SolarSystemWithExoplanetsComponent"] //OktaCallbackComponent // Commenting this line out makes it so my homepage loads without "Loading..."
             ],
             imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"].withServerTransition({
               appId: 'ng-cli-universal'
@@ -1484,6 +1580,9 @@
             }, {
               path: 'exoplanets',
               component: _exoplanets_exoplanets_component__WEBPACK_IMPORTED_MODULE_12__["ExoplanetsComponent"]
+            }, {
+              path: 'solar-systems/:id',
+              component: _solar_system_with_exoplanets_solar_system_with_exoplanets_component__WEBPACK_IMPORTED_MODULE_16__["SolarSystemWithExoplanetsComponent"]
             } //{ path: '**', redirectTo: '' }
             ])],
             providers: [{
@@ -1570,10 +1669,10 @@
         _createClass(PlanetsOfSsComponent, [{
           key: "ngOnInit",
           value: function ngOnInit() {
-            var _this4 = this;
+            var _this5 = this;
 
             this.ssData.getCurrentId().subscribe(function (currentId) {
-              return _this4.solarSystemId = currentId;
+              return _this5.solarSystemId = currentId;
             });
           }
         }]);
@@ -1751,8 +1850,7 @@
 
       var _angular_common__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
       /*! @angular/common */
-      "ofXK"); //import { Component, OnInit } from '@Angular/core';
-
+      "ofXK");
 
       function ExoplanetsComponent_p_4_Template(rf, ctx) {
         if (rf & 1) {
@@ -1891,12 +1989,12 @@
       }
 
       var ExoplanetsComponent = function ExoplanetsComponent(http, baseUrl) {
-        var _this5 = this;
+        var _this6 = this;
 
         _classCallCheck(this, ExoplanetsComponent);
 
         http.get(baseUrl + 'api/Exoplanets').subscribe(function (result) {
-          _this5.exoplanets = result;
+          _this6.exoplanets = result;
         }, function (error) {
           return console.error(error);
         });
@@ -2148,15 +2246,15 @@
       /* harmony import */
 
 
-      var _angular_common__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
-      /*! @angular/common */
-      "ofXK");
+      var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
+      /*! @angular/router */
+      "tyNb");
       /* harmony import */
 
 
-      var _angular_router__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
-      /*! @angular/router */
-      "tyNb");
+      var _angular_common__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
+      /*! @angular/common */
+      "ofXK");
 
       function SolarSystemsComponent_p_4_Template(rf, ctx) {
         if (rf & 1) {
@@ -2172,8 +2270,8 @@
         }
       }
 
-      var _c0 = function _c0(a1) {
-        return ["/planets-of-ss", a1];
+      var _c0 = function _c0() {
+        return ["/solarSystemsWithExoplanets"];
       };
 
       function SolarSystemsComponent_table_5_tr_12_Template(rf, ctx) {
@@ -2217,7 +2315,7 @@
 
             var ctx_r4 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](2);
 
-            return ctx_r4.newId(solarSystem_r3.solarSystemId);
+            return ctx_r4.onSelect(solarSystem_r3.solarSystemId);
           });
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](11, "View Planets");
@@ -2250,7 +2348,7 @@
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("routerLink", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction1"](5, _c0, solarSystem_r3.solarSystemId));
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("routerLink", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction0"](5, _c0));
         }
       }
 
@@ -2292,7 +2390,7 @@
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](11, "tbody");
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](12, SolarSystemsComponent_table_5_tr_12_Template, 12, 7, "tr", 4);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](12, SolarSystemsComponent_table_5_tr_12_Template, 12, 6, "tr", 4);
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
@@ -2308,20 +2406,32 @@
         }
       }
 
-      var SolarSystemsComponent = function SolarSystemsComponent(http, baseUrl) {
-        var _this6 = this;
+      var SolarSystemsComponent = /*#__PURE__*/function () {
+        function SolarSystemsComponent(http, baseUrl, router) {
+          var _this7 = this;
 
-        _classCallCheck(this, SolarSystemsComponent);
+          _classCallCheck(this, SolarSystemsComponent);
 
-        http.get(baseUrl + 'api/SolarSystems').subscribe(function (result) {
-          _this6.solarSystems = result;
-        }, function (error) {
-          return console.error(error);
-        });
-      };
+          this.router = router;
+          http.get(baseUrl + 'api/SolarSystems').subscribe(function (result) {
+            _this7.solarSystems = result;
+          }, function (error) {
+            return console.error(error);
+          });
+        }
+
+        _createClass(SolarSystemsComponent, [{
+          key: "onSelect",
+          value: function onSelect(SSId) {
+            this.router.navigate(['/solar-systems', SSId]);
+          }
+        }]);
+
+        return SolarSystemsComponent;
+      }();
 
       SolarSystemsComponent.ɵfac = function SolarSystemsComponent_Factory(t) {
-        return new (t || SolarSystemsComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpClient"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"]('BASE_URL'));
+        return new (t || SolarSystemsComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpClient"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"]('BASE_URL'), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_router__WEBPACK_IMPORTED_MODULE_2__["Router"]));
       };
 
       SolarSystemsComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({
@@ -2359,7 +2469,7 @@
             _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", ctx.solarSystems);
           }
         },
-        directives: [_angular_common__WEBPACK_IMPORTED_MODULE_2__["NgIf"], _angular_common__WEBPACK_IMPORTED_MODULE_2__["NgForOf"], _angular_router__WEBPACK_IMPORTED_MODULE_3__["RouterLinkWithHref"]],
+        directives: [_angular_common__WEBPACK_IMPORTED_MODULE_3__["NgIf"], _angular_common__WEBPACK_IMPORTED_MODULE_3__["NgForOf"], _angular_router__WEBPACK_IMPORTED_MODULE_2__["RouterLinkWithHref"]],
         encapsulation: 2
       });
       /*@__PURE__*/
@@ -2380,6 +2490,8 @@
               type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Inject"],
               args: ['BASE_URL']
             }]
+          }, {
+            type: _angular_router__WEBPACK_IMPORTED_MODULE_2__["Router"]
           }];
         }, null);
       })();
