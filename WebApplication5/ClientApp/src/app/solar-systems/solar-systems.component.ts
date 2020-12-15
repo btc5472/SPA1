@@ -18,7 +18,7 @@ export class SolarSystemsComponent {
 
 interface SolarSystemIF {
   solarSystemId: number;
-  name: string
+  name: string;
   binaryStars: boolean;
   numPlanets: number;
   //life: boolean;

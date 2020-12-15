@@ -14,6 +14,8 @@ import { FetchDataComponent } from './fetch-data/fetch-data.component';
 import { SolarSystemsComponent } from './solar-systems/solar-systems.component';
 import { ExoplanetsComponent } from './exoplanets/exoplanets.component';
 import { LoginComponent } from './login/login.component';
+import { ParentSsDetailsComponent } from './parent-ss-details/parent-ss-details.component';
+import { PlanetsOfSsComponent } from './planets-of-ss/planets-of-ss.component';
 
 /*const CALLBACK_PATH = 'login/callback';
 
@@ -48,7 +50,9 @@ const config = {
     FetchDataComponent,
     SolarSystemsComponent,
     ExoplanetsComponent,
-    LoginComponent
+    LoginComponent,
+    ParentSsDetailsComponent,
+    PlanetsOfSsComponent
     //OktaCallbackComponent // Commenting this line out makes it so my homepage loads without "Loading..."
   ],
   imports: [

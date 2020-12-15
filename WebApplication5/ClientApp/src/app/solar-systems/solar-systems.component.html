@@ -19,6 +19,7 @@
       <td>{{ solarSystem.name }}</td>
       <td>{{ solarSystem.binaryStars }}</td>
       <td>{{ solarSystem.numPlanets }}</td>
+      <td><a (click)="newId(solarSystem.solarSystemId)" [routerLink]="['/planets-of-ss', solarSystem.solarSystemId]">View Planets</a></td>
     </tr>
   </tbody>
 </table>
